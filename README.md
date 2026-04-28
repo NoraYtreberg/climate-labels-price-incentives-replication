@@ -6,7 +6,7 @@ This replication package contains the data and code required to reproduce the ma
 
 - `Data/` contains the de-identified input data, derived analysis datasets, and stored starting-value files used in the latent class models.
 - `R/` contains the scripts used to construct datasets, estimate models, and reproduce figures and tables.
-- `Output/` contains model outputs and generated tables and figures.
+- `Output/` contains model outputs and generated tables and figures. The Output folder is generated when the scripts are run. It may be empty in the repository before replication is executed.
 
 ## Data
 
