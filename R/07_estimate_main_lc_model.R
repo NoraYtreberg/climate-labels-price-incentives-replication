@@ -352,6 +352,17 @@ apollo_deltaMethod(
   )
 )
 
+#Test negative synergy
+apollo_deltaMethod(
+  model,
+  list(
+    expression = c(
+      synergy_additive = "a_vegan_label_discount - a_vegan_label - a_vegan_discount"
+    ),
+    varcov = "robust",
+    printPVal = 1
+  )
+)
 
 #Test marginal effects
 apollo_deltaMethod(model, list(
