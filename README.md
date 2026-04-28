@@ -66,13 +66,13 @@ Creates Figure 4, showing choice shares by treatment group in the choice experim
 `04_figure_5.R`  
 Creates Figure 5, a density plot of the PCA-based norm variable.
 
-`10_figure_6.R`  
+`11_figure_6.R`  
 Creates Figure 6 from the long-format latent-class post-estimation dataset. The figure shows the distribution of the climate norm score (PC1) by latent class, using posterior class probabilities as weights in a ridgeline density plot.
 
-`11_figure_7.R`  
+`12_figure_7.R`  
 Creates Figure 7, which plots posterior individual willingness to pay against the climate norm score by treatment group.
 
-`12_figure_8.R`  
+`13_figure_8.R`  
 Creates Figure 8, which shows mean posterior willingness to pay by quartiles of the climate norm score and treatment group.
 
 ### Model estimation
@@ -91,15 +91,18 @@ Estimates the simple 5-class latent class model without treatment interactions. 
 
 ### Post-estimation
 
-`09_compute_lc_postestimation_wtp.R`  
+`09_lrtest_main_lc_vs_mnl.R`
+Performs a likelihood-ratio test comparing the treatment-interaction multinomial logit model and the main latent class model. The script saves the LR test output as a text file in the Output folder.
+
+`10_compute_lc_postestimation_wtp.R`  
 Computes post-estimation willingness-to-pay measures from the estimated latent class model. The script calculates class-specific willingness to pay for the vegan option, the unconditional average willingness to pay, and respondent-level posterior willingness to pay. It also creates the aligned datasets used in the later latent-class figures.
 
 ### Tables
 
-`13_table_A1.R`  
+`14_table_A1.R`  
 Reproduces Appendix Table A1, the balance table by treatment group.
 
-`14_table_A2.R`  
+`15_table_A2.R`  
 Reproduces Appendix Table A2, which reports response rates on the climate norm items.
 
 ## Notes on latent class models
