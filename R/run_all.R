@@ -9,6 +9,7 @@ rm(list = ls())
 
 # Required packages ------------------------------------------------------------
 required_packages <- c(
+  "here",
   "dplyr",
   "tidyr",
   "ggplot2",
@@ -41,6 +42,8 @@ if (length(missing_packages) > 0) {
     )
   )
 }
+
+setwd(here::here())
 
 # Run scripts ------------------------------------------------------------------
 source(file.path("R", "01_create_analysis_data.R"))
